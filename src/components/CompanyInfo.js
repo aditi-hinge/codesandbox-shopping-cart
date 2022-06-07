@@ -57,7 +57,7 @@ const Icon = styled.div`
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  margin-left: 0.2em;
+  margin-left: 0.5em;
   cursor: pointer;
 
   &:hover {
