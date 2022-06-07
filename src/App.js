@@ -5,6 +5,7 @@ import Slider from "./components/Slider";
 import Categories from "./components/Categories";
 import Products from "./components/Products";
 import Newsletter from "./components/Newsletter";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
         <Categories />
         <Products />
         <Newsletter />
+        <Footer />
       </h1>
     </div>
   );

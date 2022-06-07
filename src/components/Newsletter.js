@@ -46,8 +46,11 @@ const Button = styled.button`
 export default function Newsletter() {
   return (
     <Container>
-      <Title>Newsletter</Title>
-      <Description>Get timely updates from your favorite brands.</Description>
+      <Title>Join Our Newsletter</Title>
+      <Description>
+        Sign up now and be the first to know about exclusive offers, latest
+        fashion news & style tips!
+      </Description>
       <InputContainer>
         <Input placeholder="email address" />
         <Button>
