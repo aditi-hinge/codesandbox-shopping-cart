@@ -8,7 +8,9 @@ const Container = styled.div`
   align-items: center;
   background-color: #fcf5f5;
   height: 10em;
+  padding: 2em 1em;
 `;
+
 const Title = styled.h2`
   font-size: 3rem;
   letter-spacing: 0.1rem;
