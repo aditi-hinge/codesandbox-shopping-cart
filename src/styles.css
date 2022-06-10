@@ -8,3 +8,7 @@
 #filter-button {
   color: white;
 }
+
+.privacy:hover {
+  cursor: pointer;
+}
