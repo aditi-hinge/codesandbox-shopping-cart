@@ -2,7 +2,11 @@ import { Search, ShoppingCartOutlined } from "@material-ui/icons";
 import { Badge } from "@material-ui/core";
 import styled from "styled-components";
 
-const Container = styled.div``;
+const Container = styled.div`
+  @media only screen and (max-width: 380px) {
+    display: none;
+  }
+`;
 
 const Wrapper = styled.div`
   padding: 1.4em 20px;
