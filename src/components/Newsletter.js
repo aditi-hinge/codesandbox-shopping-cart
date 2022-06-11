@@ -36,7 +36,12 @@ const InputContainer = styled.div`
   justify-content: space-between;
   border: 1px solid lightgray;
 
-  ${mobile({ display: "flex", justifyContent: "center", width: "80%" })}
+  ${mobile({
+    display: "flex",
+    justifyContent: "center",
+    width: "80%",
+    marginBottom: "1em"
+  })}
 `;
 
 const Input = styled.input`
