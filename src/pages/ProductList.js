@@ -1,4 +1,4 @@
-// import styled from "styled-components";
+import styled from "styled-components";
 import Navbar from "../components/Navbar";
 import MemberAdvert from "../components/MemberAdvert";
 import Filter from "../components/Filter";
@@ -9,11 +9,11 @@ import Footer from "../components/Footer";
 
 import "../styles.css";
 
-// const Container = styled.div``;
+const Container = styled.div``;
 
 export default function ProductList() {
   return (
-    <div>
+    <Container>
       <h1>
         <Announcements />
         <Navbar />
@@ -23,6 +23,6 @@ export default function ProductList() {
         <Newsletter />
         <Footer />
       </h1>
-    </div>
+    </Container>
   );
 }
