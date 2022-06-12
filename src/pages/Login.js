@@ -2,6 +2,8 @@ import "../styles.css";
 import LoginImage from "../Images/login-bg.jpg";
 import styled from "styled-components";
 
+import { mobile } from "../responsive";
+
 const Container = styled.div`
   height: 100vh;
   width: 100vw;
@@ -13,6 +15,10 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  ${mobile({
+    background: "none",
+  })}
 `;
 
 const Wrapper = styled.div`
@@ -24,6 +30,12 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   border-radius: 20px;
+
+  ${mobile({
+    // backgroundColor: "orange",
+    height: "100vh",
+    width: "100vw",
+  })}
 `;
 
 const Title = styled.h3`
@@ -37,7 +49,6 @@ const InputContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-left: 0.5em; */
   width: 100%;
 `;
 
@@ -48,8 +59,11 @@ const Input = styled.input`
   padding: 1em 2em;
   font-size: 1rem;
   box-sizing: border-box;
-
   width: 100%;
+
+  ${mobile({
+    border: "1px solid gray",
+  })}
 `;
 
 const Link = styled.a`
