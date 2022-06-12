@@ -2,6 +2,8 @@ import "../styles.css";
 import RegisterPageBgImage from "../Images/register-page-bg.jpg";
 import styled from "styled-components";
 
+import { mobile } from "../responsive";
+
 const Container = styled.div`
   height: 100vh;
   width: 100vw;
@@ -13,6 +15,10 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  ${mobile({
+    background: "none"
+  })}
 `;
 
 const Wrapper = styled.div`
@@ -28,6 +34,10 @@ const Wrapper = styled.div`
 
 const Title = styled.h3`
   font-size: 2rem;
+
+  ${mobile({
+    fontSize: "1.5rem"
+  })}
 `;
 
 const Form = styled.form`
@@ -52,6 +62,10 @@ const Input = styled.input`
   padding: 1em 2em;
   font-size: 1rem;
   display: block;
+
+  ${mobile({
+    border: "1px solid gray"
+  })}
 `;
 
 const Agreement = styled.p`
@@ -61,6 +75,19 @@ const Agreement = styled.p`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  ${mobile({
+    display: "none"
+  })};
+`;
+
+const MobileAgreement = styled.p`
+  display: "none",
+    ${mobile({
+      display: "block",
+      width: "100%",
+      backgroundColor: "orange"
+    })};
 `;
 
 const Button = styled.button`
@@ -106,6 +133,7 @@ export default function Register() {
             data in accordance with the{" "}
             <b className="privacy">PRIVACY POLICY</b>
           </Agreement>
+          <MobileAgreement>Read Agreement Policy</MobileAgreement>
           <Button>CREATE ACCOUNT</Button>
         </Form>
       </Wrapper>

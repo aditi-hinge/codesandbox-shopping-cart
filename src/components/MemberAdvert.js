@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { mobile } from "../responsive";
 
 const Container = styled.div`
   display: flex;
@@ -8,12 +9,21 @@ const Container = styled.div`
   padding: 2em;
   background-color: #e5e4e2;
   margin-bottom: 20px;
+
+  ${mobile({
+    padding: "1em 1.3em",
+    marginBottom: "0"
+  })}
 `;
 
 const Title = styled.h4`
   color: #ff0000;
   margin-bottom: 10px;
   font-size: 1.2rem;
+
+  ${mobile({
+    textAlign: "center"
+  })}
 `;
 
 const Desc = styled.p`
