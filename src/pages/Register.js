@@ -58,7 +58,7 @@ const InputContainer = styled.div`
 const Input = styled.input`
   flex: 1;
   min-width: 40%;
-  margin: 20px 2em 0px 0px;
+  margin: 20px 2em 0 0;
   padding: 1em 2em;
   font-size: 1rem;
   display: block;
@@ -82,12 +82,16 @@ const Agreement = styled.p`
 `;
 
 const MobileAgreement = styled.p`
-  display: "none",
-    ${mobile({
-      display: "block",
-      width: "100%",
-      backgroundColor: "orange"
-    })};
+  display: "none";
+
+  ${mobile({
+    display: "block",
+    width: "100%",
+    textAlign: "right",
+    fontSize: "0.7rem",
+    padding: "0.5em",
+    marginRight: "2em"
+  })};
 `;
 
 const Button = styled.button`
@@ -102,6 +106,12 @@ const Button = styled.button`
   &:hover {
     filter: brightness(130%);
   }
+
+  ${mobile({
+    width: "90%",
+    margin: "20px 2em 0 0",
+    padding: "10px 20px"
+  })}
 `;
 
 export default function Register() {
@@ -133,8 +143,10 @@ export default function Register() {
             data in accordance with the{" "}
             <b className="privacy">PRIVACY POLICY</b>
           </Agreement>
-          <MobileAgreement>Read Agreement Policy</MobileAgreement>
           <Button>CREATE ACCOUNT</Button>
+          <MobileAgreement>
+            <b>Read Agreement Policy</b>
+          </MobileAgreement>
         </Form>
       </Wrapper>
     </Container>
